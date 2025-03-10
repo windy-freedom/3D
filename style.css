@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+#controls {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}

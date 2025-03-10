@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D推箱子</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container"></div>
+    <div id="controls">
+        <div>方向键或WASD：移动</div>
+        <div>R键：重置当前关卡</div>
+        <div>Z键：撤销上一步</div>
+        <div>N键：下一关</div>
+        <div>P键：上一关</div>
+        <div>鼠标左键：旋转视角</div>
+        <div>鼠标滚轮：缩放视角</div>
+    </div>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.157.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.157.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module">
+        import { SokobanGame } from './game.js';
+        window.onload = () => {
+            new SokobanGame();
+        };
+    </script>
+</body>
+</html>
